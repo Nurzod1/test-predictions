@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// @media (min-width: 567px) {
+//   .container {
+//     width: 550px;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .container {
+//     width: 750px;
+//   }
+// }
+// @media (min-width: 992px) {
+//   .container {
+//     width: 970px;
+//   }
+// }
+// @media (min-width: 1200px) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
+
+@media (min-width: 1500px) {
+  .container {
+    width: 1440px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

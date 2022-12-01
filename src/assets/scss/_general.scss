@@ -1,0 +1,96 @@
+.button-orange {
+  font-family: Rob;
+  font-size: 20px;
+  font-weight: 300;
+  min-width: 300px;
+  color: #ffffff;
+  background: #f79e34;
+  padding: 25px 40px;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &.delay--100::after {
+    animation-delay: 100ms;
+    animation-duration: 3200ms;
+  }
+
+  &.delay--200::after {
+    animation-delay: 200ms;
+    animation-duration: 3400ms;
+  }
+
+  &.delay--300::after {
+    animation-delay: 300ms;
+    animation-duration: 3600ms;
+  }
+
+  &.delay--400::after {
+    animation-delay: 400ms;
+    animation-duration: 3800ms;
+  }
+
+  @keyframes Blik {
+    from {
+      left: -100px;
+    }
+    to {
+      left: calc(100% + 60px);
+    }
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 50px;
+    height: 155px;
+    background: #fff;
+    animation-name: Blik;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    transform: rotate(35deg) translateY(-25%);
+    opacity: 0.2;
+    z-index: 10;
+  }
+}
+
+.text {
+  font-family: Rob;
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+
+  span {
+    color: #f6c866;
+  }
+}
+
+.title {
+  font-family: Rob;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #f6c866;
+  text-align: center;
+}
+
+.text-bad {
+  font-family: Bad;
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subtext {
+  font-family: Rob;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
